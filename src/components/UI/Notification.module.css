@@ -1,0 +1,41 @@
+.notification {
+    position: fixed;
+    border-radius: 0.3rem;
+    right: 1rem;
+    top: 6rem;
+    width: 16rem;
+    height: 3rem;
+    background-color: #1a8ed1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    color: rgb(4, 4, 4);
+    animation: slide-down 300ms ease-out forwards;
+  }
+  
+  .notification h2,
+  .notification p {
+    font-size: 1rem;
+    margin: 0 5%;
+    text-align: left;
+  }
+  
+  .error {
+    background-color: #e86060;
+  }
+  
+  .success {
+    background-color: #1ad1b9;
+  }
+
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

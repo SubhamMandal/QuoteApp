@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* width: 50rem; */
+}
+
+.dlt-btn {
+  font-size: 2rem;
+  color: #008080;
+  position: relative;
+  right: -5rem;
+  cursor: pointer;
+}
+
+.dlt-btn:hover {
+  color: #992424;
+  transform: scale(1.2);
+  animation: shake 300ms ease-out forwards infinite;
+}
+
+@keyframes shake {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 12deg;
+  }
+  50% {
+    rotate: 0deg;
+  }
+  75% {
+    rotate: -12deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+.quote {
+  background-color: #162b2b;
+  color: white;
+  border-radius: 6px;
+  padding: 3rem;
+  margin: 3rem auto;
+  width: 40rem;
+  max-width: 100%;
+}
+
+.quote p {
+  font-size: 2.5rem;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.quote figcaption {
+  font-style: italic;
+  font-size: 1.5rem;
+  text-align: right;
+  color: #a1e0e0;
+}
+
+@media screen and (max-width: 880px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .dlt-btn {
+    align-self: flex-end;  
+    right: 0;
+  }
+}
