@@ -28,7 +28,7 @@ function App() {
               <NewQuote />
             </Route>
             <Route path='*'>
-              <NotFound />
+              <Redirect to='/quotes' />
             </Route>
           </Switch>
         </Suspense>
